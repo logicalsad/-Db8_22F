@@ -1,0 +1,42 @@
+Programa - Registar Juri, e presidente do juri (a ponderação é definida pelo presidente do juri)
+	 - Ser possível registar as ideias na hora ou não
+	 - Avaliar por 
+         - Avaliar a ideia em: 
+		- Existe uma necessidade para este produto ou serviço?
+		- Desejo (procura) por este produto ou serviço?
+		- Quem vai comprar (potenciais clientes)?
+		- Quão grande é o mercado em questão (estudo de mercado)?
+		- Quem esta disposto a pagar pelo serviço/ideia?
+		- Quão difícil é implementar o serviço/ideia?
+		- Ideias parecidas existentes no mercado, mais próxima desta ideia de negócios no mercado?
+			- Quem é a concorrência
+		- Rentablidade do projeto/ideia
+		- Escalabilidade -> O protótipo é capaz de ser dimensionado? Pode ser duplicado com consistência, 
+				    atender a padrões contínuos e ser replicado de tal forma que possa ser produzido
+				    e produzido novamente sem ser constantemente reinventado ou ajustado?
+	- Triagem das ideias
+	- Avaliar as ideias restantes
+
+
+O nosso programa tem como objetivo a avaliação de novas ideias, para tal propomos
+aos donos do produto que realizem uma pequena avaliação do seu produto e que nos
+apresentem a sua empresa, numa breve apresentação.
+
+
+Podemos organizar as competição por ranks(especialidades) ou 
+por pontos(cada ideia recebe pontos por cada critério, obtendo uma pontuação geral no fim).
+
+|-----------------------------------------------------------------------------------------|
+Alguns critérios:
+	- Novidade/Criatividade
+	- viabilidade
+	- Intuição
+	- Rentablidade
+	- Estratégia
+
+Votação individual de cada jurado
+|-----------------------------------------------------------------------------------------|
+
+tratar do git
+e relatorio de requesitos 
+
