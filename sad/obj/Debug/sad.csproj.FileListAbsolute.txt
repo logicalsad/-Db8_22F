@@ -1,0 +1,10 @@
+C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.csprojAssemblyReference.cache
+C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.login.resources
+C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.csproj.GenerateResource.cache
+C:\Users\Daniel Cruz\source\repos\sad\sad\bin\Debug\sad.exe.config
+C:\Users\Daniel Cruz\source\repos\sad\sad\bin\Debug\sad.exe
+C:\Users\Daniel Cruz\source\repos\sad\sad\bin\Debug\sad.pdb
+C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.Properties.Resources.resources
+C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.exe
+C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.pdb
