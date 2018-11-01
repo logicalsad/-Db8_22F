@@ -8,3 +8,13 @@ C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.Properties.Resources.res
 C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.csproj.CoreCompileInputs.cache
 C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.exe
 C:\Users\Daniel Cruz\source\repos\sad\sad\obj\Debug\sad.pdb
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\bin\Debug\sad.exe.config
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\bin\Debug\sad.exe
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\bin\Debug\sad.pdb
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\obj\Debug\sad.csprojAssemblyReference.cache
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\obj\Debug\sad.login.resources
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\obj\Debug\sad.Properties.Resources.resources
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\obj\Debug\sad.csproj.GenerateResource.cache
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\obj\Debug\sad.csproj.CoreCompileInputs.cache
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\obj\Debug\sad.exe
+C:\Users\Jbeliha\Source\Repos\_Db8_22F\sad\obj\Debug\sad.pdb
