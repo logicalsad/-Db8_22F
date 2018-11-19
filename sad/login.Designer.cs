@@ -30,9 +30,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -78,6 +78,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "LOGIN    ->";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -109,15 +110,15 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "you are one step away";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(89, 276);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 22);
-            this.textBox1.TabIndex = 7;
+            this.txtName.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtName.Location = new System.Drawing.Point(89, 276);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(210, 22);
+            this.txtName.TabIndex = 7;
             // 
             // label5
             // 
@@ -129,14 +130,14 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Forgot Password";
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(89, 330);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 22);
-            this.textBox2.TabIndex = 9;
+            this.txtPassword.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(89, 330);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(210, 22);
+            this.txtPassword.TabIndex = 9;
             // 
             // panel2
             // 
@@ -173,9 +174,9 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -204,9 +205,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
