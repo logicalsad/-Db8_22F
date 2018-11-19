@@ -36,15 +36,21 @@ namespace sad
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            DataTable dt = new DataTable();//matriz é prenchida com login - pass - admin
-            using (SqlConnection sqlConn = new SqlConnection("Data Source=WSP-CSPSPO71;Initial Catalog=BinCompeteDB;Integrated Security=True;"))
+            //matriz é prenchida com login retornoado da parte do SQL
+            DataTable dt = new DataTable();
+            //Dentro das chavetas é indicado o código de localização da BD e o dados de acesso
+            using (SqlConnection sqlConn = new SqlConnection("Data Source=localhost;Initial Catalog=BinCompeteDB;Integrated Security=True;"))
             {
+                //nome da procedure onde o programa irá buscar os dados de acesso à aplicação
                 string sql = "sp_login";
+                //cria a con à BD usando procedure que irá aceder e passar os valores das caixas de texto e o caminho para a BD
                 using (SqlCommand sqlCmd = new SqlCommand(sql, sqlConn))
                 {
+                    
+                    //
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("@LoginName", txtName.Text);
+                    
                     sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Text);
                     sqlConn.Open();
                     using (SqlDataAdapter sqlAdapter = new SqlDataAdapter(sqlCmd))
@@ -54,12 +60,18 @@ namespace sad
                 }
             }
 
-            var InfoObj = (from rw in dt.AsEnumerable()
-                           select new MyUser()
-                           {
-                               Name = Convert.ToString(rw["LoginName"]),
-                               Admin = Convert.ToBoolean(rw["Administrator"])
-                           });
+            foreach (DataRow row in dt.Rows)
+            {
+                string Login = row["LoginName"].ToString();
+                string Admin = row["Administrator"].ToString();
+
+            }
+            //var InfoObj = (from rw in dt.AsEnumerable()
+            //               select new MyUser()
+            //               {
+            //                   Name = Convert.ToString(rw["LoginName"]),
+            //                   Admin = Convert.ToBoolean(rw["Administrator"])
+            //               });
 
         }
     }
