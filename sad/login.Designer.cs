@@ -23,31 +23,23 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.gpb1 = new System.Windows.Forms.GroupBox();
+            this.rdbJuri = new System.Windows.Forms.RadioButton();
+            this.rdbUtilizador = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gpb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::sad.Properties.Resources.Logotipo_1__2_;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(149, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(66, 84);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -55,7 +47,7 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(228, 259);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Username";
             // 
@@ -67,18 +59,18 @@
             this.panel1.Size = new System.Drawing.Size(65, 2);
             this.panel1.TabIndex = 2;
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.Location = new System.Drawing.Point(89, 390);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(210, 33);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "LOGIN    ->";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnLogin.Location = new System.Drawing.Point(89, 390);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(210, 33);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "LOGIN    ->";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -86,7 +78,7 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(129, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 52);
+            this.label2.Size = new System.Drawing.Size(154, 70);
             this.label2.TabIndex = 4;
             this.label2.Text = "MEMBER\r\n  LOGIN";
             // 
@@ -96,7 +88,7 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(227, 313);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 15);
+            this.label3.Size = new System.Drawing.Size(66, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Password";
             // 
@@ -106,7 +98,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(190, 115);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 14);
+            this.label4.Size = new System.Drawing.Size(135, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "you are one step away";
             // 
@@ -117,18 +109,8 @@
             this.txtName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtName.Location = new System.Drawing.Point(89, 276);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(210, 22);
+            this.txtName.Size = new System.Drawing.Size(210, 26);
             this.txtName.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(189, 440);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Forgot Password";
             // 
             // txtPassword
             // 
@@ -136,7 +118,7 @@
             this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(89, 330);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(210, 22);
+            this.txtPassword.Size = new System.Drawing.Size(210, 26);
             this.txtPassword.TabIndex = 9;
             // 
             // panel2
@@ -156,31 +138,67 @@
             this.panel3.TabIndex = 3;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // panel4
+            // gpb1
             // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(192, 435);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(80, 2);
-            this.panel4.TabIndex = 11;
+            this.gpb1.BackColor = System.Drawing.Color.Transparent;
+            this.gpb1.Controls.Add(this.rdbUtilizador);
+            this.gpb1.Controls.Add(this.rdbJuri);
+            this.gpb1.Location = new System.Drawing.Point(89, 436);
+            this.gpb1.Name = "gpb1";
+            this.gpb1.Size = new System.Drawing.Size(200, 41);
+            this.gpb1.TabIndex = 12;
+            this.gpb1.TabStop = false;
+            // 
+            // rdbJuri
+            // 
+            this.rdbJuri.AutoSize = true;
+            this.rdbJuri.Checked = true;
+            this.rdbJuri.Location = new System.Drawing.Point(7, 14);
+            this.rdbJuri.Name = "rdbJuri";
+            this.rdbJuri.Size = new System.Drawing.Size(50, 20);
+            this.rdbJuri.TabIndex = 0;
+            this.rdbJuri.TabStop = true;
+            this.rdbJuri.Text = "Júri";
+            this.rdbJuri.UseVisualStyleBackColor = true;
+            this.rdbJuri.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            // 
+            // rdbUtilizador
+            // 
+            this.rdbUtilizador.AutoSize = true;
+            this.rdbUtilizador.Location = new System.Drawing.Point(76, 15);
+            this.rdbUtilizador.Name = "rdbUtilizador";
+            this.rdbUtilizador.Size = new System.Drawing.Size(82, 20);
+            this.rdbUtilizador.TabIndex = 1;
+            this.rdbUtilizador.Text = "Utilizador";
+            this.rdbUtilizador.UseVisualStyleBackColor = true;
+            this.rdbUtilizador.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::sad.Properties.Resources.Logotipo_1__2_;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(149, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(66, 84);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(366, 527);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.gpb1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -190,6 +208,8 @@
             this.Name = "login";
             this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.login_Load);
+            this.gpb1.ResumeLayout(false);
+            this.gpb1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -201,15 +221,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.GroupBox gpb1;
+        private System.Windows.Forms.RadioButton rdbJuri;
+        private System.Windows.Forms.RadioButton rdbUtilizador;
     }
 }

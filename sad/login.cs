@@ -23,9 +23,11 @@ namespace sad
         {
             InitializeComponent();
         }
+        
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
+
 
         }
 
@@ -36,6 +38,8 @@ namespace sad
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            /*
             //matriz é prenchida com login retornoado da parte do SQL
             DataTable dt = new DataTable();
             //Dentro das chavetas é indicado o código de localização da BD e o dados de acesso
@@ -72,6 +76,28 @@ namespace sad
             //                   Name = Convert.ToString(rw["LoginName"]),
             //                   Admin = Convert.ToBoolean(rw["Administrator"])
             //               });
+            */
+
+            //************************************ Falta o and login
+            if (rdbUtilizador.Checked==true ) {
+                backoffice abrirBackoffice = new backoffice();
+                abrirBackoffice.ShowDialog();
+                this.Visible = false;
+
+            }
+           
+            
+        }
+
+        private void rdb_CheckedChanged(object sender, EventArgs e) {
+            /*if (rdbUtilizador.Checked) {
+                MessageBox.Show("Sim, utilizador");
+
+            }
+            else {
+                MessageBox.Show("Não");
+            }*/
+
 
         }
     }
