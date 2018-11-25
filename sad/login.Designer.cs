@@ -37,7 +37,6 @@
             this.gpb1 = new System.Windows.Forms.GroupBox();
             this.rdbUtilizador = new System.Windows.Forms.RadioButton();
             this.rdbJuri = new System.Windows.Forms.RadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gpb1.SuspendLayout();
             this.SuspendLayout();
@@ -183,16 +182,6 @@
             this.rdbJuri.Text = "Júri";
             this.rdbJuri.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(59, 191);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(78, 18);
-            this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
@@ -200,7 +189,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(384, 527);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.gpb1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -242,6 +230,5 @@
         private System.Windows.Forms.GroupBox gpb1;
         private System.Windows.Forms.RadioButton rdbUtilizador;
         private System.Windows.Forms.RadioButton rdbJuri;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
