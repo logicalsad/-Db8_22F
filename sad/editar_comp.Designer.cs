@@ -26,6 +26,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblName
@@ -54,12 +55,23 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(680, 496);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 41);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Editar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // editar_comp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1016, 573);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblName);
@@ -75,5 +87,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button button1;
     }
 }
