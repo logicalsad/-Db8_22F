@@ -34,8 +34,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.gpb1 = new System.Windows.Forms.GroupBox();
-            this.rdbJuri = new System.Windows.Forms.RadioButton();
             this.rdbUtilizador = new System.Windows.Forms.RadioButton();
+            this.rdbJuri = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gpb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,9 +64,9 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnLogin.Location = new System.Drawing.Point(89, 390);
+            this.btnLogin.Location = new System.Drawing.Point(89, 432);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(210, 33);
+            this.btnLogin.Size = new System.Drawing.Size(204, 32);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "LOGIN    ->";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -104,20 +104,22 @@
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtName.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtName.Location = new System.Drawing.Point(89, 276);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(210, 26);
             this.txtName.TabIndex = 7;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // txtPassword
             // 
-            this.txtPassword.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtPassword.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(89, 330);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(210, 26);
             this.txtPassword.TabIndex = 9;
             // 
@@ -143,11 +145,22 @@
             this.gpb1.BackColor = System.Drawing.Color.Transparent;
             this.gpb1.Controls.Add(this.rdbUtilizador);
             this.gpb1.Controls.Add(this.rdbJuri);
-            this.gpb1.Location = new System.Drawing.Point(89, 436);
+            this.gpb1.Location = new System.Drawing.Point(89, 362);
             this.gpb1.Name = "gpb1";
-            this.gpb1.Size = new System.Drawing.Size(200, 41);
+            this.gpb1.Size = new System.Drawing.Size(208, 46);
             this.gpb1.TabIndex = 12;
             this.gpb1.TabStop = false;
+            // 
+            // rdbUtilizador
+            // 
+            this.rdbUtilizador.AutoSize = true;
+            this.rdbUtilizador.Location = new System.Drawing.Point(103, 15);
+            this.rdbUtilizador.Name = "rdbUtilizador";
+            this.rdbUtilizador.Size = new System.Drawing.Size(82, 20);
+            this.rdbUtilizador.TabIndex = 1;
+            this.rdbUtilizador.Text = "Utilizador";
+            this.rdbUtilizador.UseVisualStyleBackColor = true;
+            this.rdbUtilizador.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdbJuri
             // 
@@ -161,17 +174,6 @@
             this.rdbJuri.Text = "Júri";
             this.rdbJuri.UseVisualStyleBackColor = true;
             this.rdbJuri.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
-            // 
-            // rdbUtilizador
-            // 
-            this.rdbUtilizador.AutoSize = true;
-            this.rdbUtilizador.Location = new System.Drawing.Point(76, 15);
-            this.rdbUtilizador.Name = "rdbUtilizador";
-            this.rdbUtilizador.Size = new System.Drawing.Size(82, 20);
-            this.rdbUtilizador.TabIndex = 1;
-            this.rdbUtilizador.Text = "Utilizador";
-            this.rdbUtilizador.UseVisualStyleBackColor = true;
-            this.rdbUtilizador.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -187,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(366, 527);
             this.Controls.Add(this.gpb1);

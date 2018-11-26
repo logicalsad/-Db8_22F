@@ -52,6 +52,12 @@
     <Compile Include="backoffice.Designer.cs">
       <DependentUpon>backoffice.cs</DependentUpon>
     </Compile>
+    <Compile Include="editar_comp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar_comp.Designer.cs">
+      <DependentUpon>editar_comp.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="backoffice.resx">
       <DependentUpon>backoffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar_comp.resx">
+      <DependentUpon>editar_comp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

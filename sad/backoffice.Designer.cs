@@ -47,6 +47,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -62,6 +63,7 @@
             // 
             // dgvCompeticoes
             // 
+            this.dgvCompeticoes.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvCompeticoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCompeticoes.Location = new System.Drawing.Point(41, 80);
             this.dgvCompeticoes.Name = "dgvCompeticoes";
@@ -74,7 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1016, 573);
             this.Controls.Add(this.dgvCompeticoes);
             this.Controls.Add(this.label1);
