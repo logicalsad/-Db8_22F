@@ -32,7 +32,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(131, 426);
+            this.button1.Location = new System.Drawing.Point(319, 426);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 40);
             this.button1.TabIndex = 1;
@@ -41,7 +41,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(268, 426);
+            this.button2.Location = new System.Drawing.Point(565, 426);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 40);
             this.button2.TabIndex = 2;
@@ -53,28 +53,29 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(123, 9);
+            this.label1.Location = new System.Drawing.Point(358, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(255, 46);
             this.label1.TabIndex = 3;
             this.label1.Text = "Competições";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // dgvCompeticoes
             // 
             this.dgvCompeticoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCompeticoes.Location = new System.Drawing.Point(124, 80);
+            this.dgvCompeticoes.Location = new System.Drawing.Point(41, 80);
             this.dgvCompeticoes.Name = "dgvCompeticoes";
             this.dgvCompeticoes.RowTemplate.Height = 24;
-            this.dgvCompeticoes.Size = new System.Drawing.Size(240, 317);
+            this.dgvCompeticoes.Size = new System.Drawing.Size(886, 317);
             this.dgvCompeticoes.TabIndex = 4;
-            
+            this.dgvCompeticoes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompeticoes_CellContentClick);
             // 
             // backoffice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(534, 529);
+            this.ClientSize = new System.Drawing.Size(1016, 573);
             this.Controls.Add(this.dgvCompeticoes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);

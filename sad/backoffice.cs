@@ -26,22 +26,34 @@ namespace sad {
         DataRow dr;
 
 
-        private void backoffice_Load(object sender, EventArgs e) {
-            con = new SqlConnection("Data Source=localhost;Initial Catalog=BinCompeteDB;Integrated Security=True;");
-            adp = new SqlDataAdapter();
-            ds = new DataSet();
-            adp.SelectCommand = new SqlCommand("select *from Users",con);
+        public void backoffice_Load() {
+            //matriz é prenchida com login retornoado da parte do SQL
+            DataTable dt = new DataTable();
+            //Dentro das chavetas é indicado o código de localização da BD e o dados de acesso
+            using (SqlConnection sqlConn = new SqlConnection("Data Source=TOSHIBA\\SQLEXPRESS;Initial Catalog=BinCompeteDB;Integrated Security=True;")) {
+                //nome da procedure onde o programa irá buscar os dados de acesso à aplicação
+                string sql = "sp_Users";
+                //cria a con à BD usando procedure que irá aceder e passar os valores das caixas de texto e o caminho para a BD
+                using (SqlCommand sqlCmd = new SqlCommand(sql, sqlConn)) {
 
-            adp.Fill(ds,"Users");
-            dt = ds.Tables["Users"];
-            dr = dt.Rows[0];
-            dgvCompeticoes.DataSource= ds.Tables["Users"];
-            
+                    //
+                    sqlCmd.CommandType = CommandType.StoredProcedure;
+                   
+                    sqlConn.Open();
+                    using (SqlDataAdapter sqlAdapter = new SqlDataAdapter(sqlCmd)) {
+                        sqlAdapter.Fill(dt);
+                    }
+                    dgvCompeticoes.DataSource = dt;
+                }
+            }
 
-
+            foreach (DataRow row in dt.Rows) {
+                string verCompeticoes = row["LoginName"].ToString();
+            }
         }
 
+        private void dgvCompeticoes_CellContentClick(object sender, DataGridViewCellEventArgs e) {
 
-        
+        }
     }
 }
